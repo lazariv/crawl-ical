@@ -25,4 +25,3 @@ create_event = function(x) {
 cal = apply(X=events, FUN=create_event, MARGIN=1) %>% bind_rows()
 ic_write(ic=ical(cal), file="yoga.ics")
 
-temp = ic_read("yoga.ics")

@@ -18,5 +18,4 @@ extract_events = function(url){
 }
 
 events = lapply(X=url_vector, FUN=extract_events) %>% bind_rows()
-#events %>% typeof()
-#as.list(as.data.frame(t(events)))
+
